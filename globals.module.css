@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
+/** عام**/
+.a1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* أهم نقطة */
+    justify-content: flex-start; /* خليه من فوق */
+    align-items: center;
+    position: relative;
+}
+
+/**صورة**/
+.a {
+    width: 300px;
+    height:auto;
+    margin: 0;
+}
+/** لينك يمين**/
+.b {
+     font-family: "IBM Plex Sans Arabic", sans-serif;
+    position: absolute;
+    right: 50px;     
+    top: 040%;      
+    transform: translateY(-50%); 
+    font-size:25px;
+   font-weight:600;
+    display: flex;
+    gap: 20px;
+    direction: rtl;
+    white-space: nowrap;
+}
+.b :hover{
+    color: burlywood;
+}
+
+/** لينك شمال**/
+.c {
+    display:inline-block;
+    border-radius: 10px;
+  /**border: 2px soild#000;**/
+   font-family: "IBM Plex Sans Arabic", sans-serif;
+   position:absolute;
+   font-size:25px;
+   font-weight:600;
+   left:30px;
+   top:40%;
+   background: transparent;
+}
+.c:active{
+    transform: translateY(-1px) scale(0.995);
+}
+.c:hover,.c:focus{
+     transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+ color: #333;
+}
+.c:hover{
+    color: burlywood;
+}
+/** كلام رئيسي**/
+.v{
+    font-size: 29px;
+    font-weight:600;
+  font-family: "Changa", sans-serif;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    direction: rtl;
+    margin-top:20px;
+}
+/** حقوق الطبع والنشر **/
+.footer{
+    font-family: "Cairo", sans-serif;
+   margin-top: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #e0d2d2;
+    color: #333;
+    font-weight:650;
+}
+/** لينك انشئ حسابي**/
+.ac:hover,.ac:focus{
+     transform: translateY(-3px) scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+ color: #333;
+}
+/**لينك تواصل معنا**/
+.ca:hover,.ca:focus{
+     transform: translateY(-8px) scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+ color: #333;
+}
+/**لينك احنا مين**/
+.wh:hover,.wh:focus{
+     transform: translateY(-3px) scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+ color: #333;
+}
+/*الكارت*/.cardBox {
+    margin-top:30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right:100px;
+    border-radius: 10px;
+    margin-bottom:20px;
+     font-family: "Cairo", sans-serif;
+}
